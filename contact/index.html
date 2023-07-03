@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="contact, jinwei">
+    <meta name="keywords" content="留言板, jinwei">
     <meta name="description" content="jinwei">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>contact | jinwei</title>
+    <title>留言板 | jinwei</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
 
@@ -737,8 +737,8 @@
 <script>
     new Valine({
         el: '#vcomments',
-        appId: 'xXAvN3oRu8AquuhbCQdxoGfi-MdYXbMMI',
-        appKey: 'GJlOfV9dzoH3Be9WmmRpUVZa',
+        appId: 'CKhsGildrv6MoFyOlCp7wdya-MdYXbMMI',
+        appKey: 'akKLAaDPGA3kxroCDEUffKFj',
         serverURLs: '',
         notify: 'true' === 'true',
         verify: 'true' === 'true',
@@ -746,11 +746,44 @@
         avatar: 'monsterid',
         pageSize: '10',
         lang: 'zh-cn',
-        placeholder: '昵称填写qq可以显示qq头像和昵称哦'
+        placeholder: 'just go go'
     });
 </script>
 
 <!--酷Q推送-->
+
+
+<script>
+    new Valine({
+        el: '#vcomments',
+        admin_email: '16463223@qq.com',
+        appId: 'CKhsGildrv6MoFyOlCp7wdya-MdYXbMMI',
+        appKey: 'akKLAaDPGA3kxroCDEUffKFj',
+        path: window.location.pathname,
+        comment_count: true,
+        notify: 'true' === 'true',
+        verify: 'true' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'monsterid',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: 'just go go',
+
+    });
+    $(document).ready(function(){
+        $("#vcomments").on('click', 'span.vat',function(){
+            $(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+            $('textarea#veditor').focus();
+        })
+    })
+</script>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<script type="text/javascript">
+    jinrishici.load(function(result) {
+        var jrsc_plac =  result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin.dynasty + " · " + result.data.origin.author
+        document.getElementById("veditor").setAttribute("placeholder",jrsc_plac);
+    });
+</script>
 
 
                     

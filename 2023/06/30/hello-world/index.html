@@ -862,8 +862,8 @@
 <script>
     new Valine({
         el: '#vcomments',
-        appId: 'xXAvN3oRu8AquuhbCQdxoGfi-MdYXbMMI',
-        appKey: 'GJlOfV9dzoH3Be9WmmRpUVZa',
+        appId: 'CKhsGildrv6MoFyOlCp7wdya-MdYXbMMI',
+        appKey: 'akKLAaDPGA3kxroCDEUffKFj',
         serverURLs: '',
         notify: 'true' === 'true',
         verify: 'true' === 'true',
@@ -871,11 +871,44 @@
         avatar: 'monsterid',
         pageSize: '10',
         lang: 'zh-cn',
-        placeholder: '昵称填写qq可以显示qq头像和昵称哦'
+        placeholder: 'just go go'
     });
 </script>
 
 <!--酷Q推送-->
+
+
+<script>
+    new Valine({
+        el: '#vcomments',
+        admin_email: '16463223@qq.com',
+        appId: 'CKhsGildrv6MoFyOlCp7wdya-MdYXbMMI',
+        appKey: 'akKLAaDPGA3kxroCDEUffKFj',
+        path: window.location.pathname,
+        comment_count: true,
+        notify: 'true' === 'true',
+        verify: 'true' === 'true',
+        visitor: 'true' === 'true',
+        avatar: 'monsterid',
+        pageSize: '10',
+        lang: 'zh-cn',
+        placeholder: 'just go go',
+
+    });
+    $(document).ready(function(){
+        $("#vcomments").on('click', 'span.vat',function(){
+            $(this).parent('div.vmeta').next("div.vcontent").after($("div.vwrap"));
+            $('textarea#veditor').focus();
+        })
+    })
+</script>
+<script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+<script type="text/javascript">
+    jinrishici.load(function(result) {
+        var jrsc_plac =  result.data.content + "\n「" + result.data.origin.title + "」" + result.data.origin.dynasty + " · " + result.data.origin.author
+        document.getElementById("veditor").setAttribute("placeholder",jrsc_plac);
+    });
+</script>
 
 
     
