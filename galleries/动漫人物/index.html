@@ -415,20 +415,46 @@
 <link rel="stylesheet" type="text/css" href="/libs/fancybox/jquery.fancybox.css">
 <link rel="stylesheet" type="text/css" href="/libs/justifiedGallery/justifiedGallery.min.css">
 
+<div class="bg-cover pd-header about-cover">
+    <div class="container">
+    <div class="row">
+    <div class="col s10 offset-s1 m8 offset-m2 l8 offset-l2">
+        <div class="brand">
+            <div class="title center-align">
+                
+                谢谢能遇见你
+                
+            </div>
 
-
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
-    <div class="container" style="right: 0px;left: 0px;">
-        <div class="row">
-            <div class="col s12 m12 l12">
-                <div class="brand">
-                    <h1 class="description center-align post-title">动漫人物</h1>
-                </div>
+            <div class="description center-align">
+                
+                <span id="subtitle"></span>
+                <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+                <script>
+                    var typed = new Typed("#subtitle", {
+                        strings: ['',''],
+                        startDelay: 300,
+                        typeSpeed: 100,
+                        loop: true,
+                        backSpeed: 50,
+                        showCursor: true
+                    });
+                </script>
+                
             </div>
         </div>
     </div>
 </div>
 
+
+<script>
+    // 每天切换 banner 图.  Switch banner image every day.
+    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
+    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+</script>
+
+    </div>
+</div>
 
 
 
@@ -436,7 +462,7 @@
 文件名先注释掉  -->
 
 <!-- 不加密写法 -->
-<!-- <div class="container">
+ <div class="container">
     <div class="photo-wrapper" >
         <div class="waterfall" id="mygallery">
             <a target="_blank" href="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/6c42feb233d74a7fce005855dfb100efd582e421.jpg"
@@ -512,101 +538,8 @@
     </a>
         </div>
     </div>
-</div> -->
+</div> 
 
-<main class="content" >
-<!-- 加密写法 -->
-<div class="container">
-    <div class="photo-wrapper">
-        
-            <div class="waterfall" id="encrypt-blog">
-                <a target="_blank" href="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/6c42feb233d74a7fce005855dfb100efd582e421.jpg"
-     class="photo-item" rel="example_group noopener"
-     data-fancybox="images">
-      <img src="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/6c42feb233d74a7fce005855dfb100efd582e421.jpg"
-       alt=6c42feb233d74a7fce005855dfb100efd582e421.jpg>
-    </a><a target="_blank" href="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/613ad9e96ba59d8c01122d2902498d8eeefd3b64.jpg"
-     class="photo-item" rel="example_group noopener"
-     data-fancybox="images">
-      <img src="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/613ad9e96ba59d8c01122d2902498d8eeefd3b64.jpg"
-       alt=613ad9e96ba59d8c01122d2902498d8eeefd3b64.jpg>
-    </a><a target="_blank" href="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/e9b5efee9ee5524701315e7073029b5a913d7dad.jpg"
-     class="photo-item" rel="example_group noopener"
-     data-fancybox="images">
-      <img src="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/e9b5efee9ee5524701315e7073029b5a913d7dad.jpg"
-       alt=e9b5efee9ee5524701315e7073029b5a913d7dad.jpg>
-    </a><a target="_blank" href="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/e67d98ef26b19a17826e9a1f1068fd7d96922140.jpg"
-     class="photo-item" rel="example_group noopener"
-     data-fancybox="images">
-      <img src="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/e67d98ef26b19a17826e9a1f1068fd7d96922140.jpg"
-       alt=e67d98ef26b19a17826e9a1f1068fd7d96922140.jpg>
-    </a><a target="_blank" href="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/32343ca02be54b99bd0f0045ece573c8cbdc7802.jpg"
-     class="photo-item" rel="example_group noopener"
-     data-fancybox="images">
-      <img src="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/32343ca02be54b99bd0f0045ece573c8cbdc7802.jpg"
-       alt=32343ca02be54b99bd0f0045ece573c8cbdc7802.jpg>
-    </a><a target="_blank" href="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/a9ecdd9888b8de7936187fdc422fa6f3d6dd7d7e.jpg"
-     class="photo-item" rel="example_group noopener"
-     data-fancybox="images">
-      <img src="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/a9ecdd9888b8de7936187fdc422fa6f3d6dd7d7e.jpg"
-       alt=a9ecdd9888b8de7936187fdc422fa6f3d6dd7d7e.jpg>
-    </a><a target="_blank" href="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/3d40bed51db7686b6103eb4952e347ad79c178cd.jpg"
-     class="photo-item" rel="example_group noopener"
-     data-fancybox="images">
-      <img src="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/3d40bed51db7686b6103eb4952e347ad79c178cd.jpg"
-       alt=3d40bed51db7686b6103eb4952e347ad79c178cd.jpg>
-    </a><a target="_blank" href="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/10bb5bddad254cdec9a79c95566ba8e2cf165300.jpg"
-     class="photo-item" rel="example_group noopener"
-     data-fancybox="images">
-      <img src="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/10bb5bddad254cdec9a79c95566ba8e2cf165300.jpg"
-       alt=10bb5bddad254cdec9a79c95566ba8e2cf165300.jpg>
-    </a><a target="_blank" href="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/74398b0d1087f96f47814901211500e366a40cb4.jpg"
-     class="photo-item" rel="example_group noopener"
-     data-fancybox="images">
-      <img src="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/74398b0d1087f96f47814901211500e366a40cb4.jpg"
-       alt=74398b0d1087f96f47814901211500e366a40cb4.jpg>
-    </a><a target="_blank" href="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/57ca14fed21fc69b083b6fc33dd2f624af65f90a.jpg"
-     class="photo-item" rel="example_group noopener"
-     data-fancybox="images">
-      <img src="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/57ca14fed21fc69b083b6fc33dd2f624af65f90a.jpg"
-       alt=57ca14fed21fc69b083b6fc33dd2f624af65f90a.jpg>
-    </a><a target="_blank" href="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/fcf3e8d1d6a9053e29c1e9f5249577860e670173.jpg"
-     class="photo-item" rel="example_group noopener"
-     data-fancybox="images">
-      <img src="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/fcf3e8d1d6a9053e29c1e9f5249577860e670173.jpg"
-       alt=fcf3e8d1d6a9053e29c1e9f5249577860e670173.jpg>
-    </a><a target="_blank" href="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/09a8c4835074f3f84b4d69edde7b6fc904090745.jpg"
-     class="photo-item" rel="example_group noopener"
-     data-fancybox="images">
-      <img src="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/09a8c4835074f3f84b4d69edde7b6fc904090745.jpg"
-       alt=09a8c4835074f3f84b4d69edde7b6fc904090745.jpg>
-    </a><a target="_blank" href="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/6e546546636f28d3e1f10dd33aa7175ce9d6c9a9.jpg"
-     class="photo-item" rel="example_group noopener"
-     data-fancybox="images">
-      <img src="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/6e546546636f28d3e1f10dd33aa7175ce9d6c9a9.jpg"
-       alt=6e546546636f28d3e1f10dd33aa7175ce9d6c9a9.jpg>
-    </a><a target="_blank" href="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/3d40bed51db7686b6103eb4952e347ad79c178cd.jpg"
-     class="photo-item" rel="example_group noopener"
-     data-fancybox="images">
-      <img src="https://images.weserv.nl/?url=https://article.biliimg.com/bfs/article/3d40bed51db7686b6103eb4952e347ad79c178cd.jpg"
-       alt=3d40bed51db7686b6103eb4952e347ad79c178cd.jpg>
-    </a>
-            </div>
-        
-    </div>
-</div>
-<main>
-<script src=""></script>
-<script src="/libs/fancybox/fancybox.js"></script>
-<script src="/libs/justifiedGallery/justifiedGallery.min.js"></script>
-
-<script>
-  // $(".waterfall").lazyload();
-
-$("a[rel=example_group]").fancybox();
-//  不加密写法
-// $("#mygallery").justifiedGallery({margins: 5, rowHeight: 150});
-$("#encrypt-blog").justifiedGallery({margins: 5, rowHeight: 150});
 
 </script>
 
